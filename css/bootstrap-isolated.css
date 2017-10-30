@@ -1,0 +1,573 @@
+/*
+Isolated Bootstrap 3(Customized Carousel only) using LESS
+Tutorial: https://formden.com/blog/isolate-bootstrap
+Tool Used: http://less2css.org
+*/
+
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*!
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.3/customize/?id=2615c264d14e90b4892f4ac55adebc4b)
+ * Config saved to config.json and https://gist.github.com/2615c264d14e90b4892f4ac55adebc4b
+ */
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.bootstrap-isolated html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.bootstrap-isolated body {
+  margin: 0;
+}
+.bootstrap-isolated article,
+.bootstrap-isolated aside,
+.bootstrap-isolated details,
+.bootstrap-isolated figcaption,
+.bootstrap-isolated figure,
+.bootstrap-isolated footer,
+.bootstrap-isolated header,
+.bootstrap-isolated hgroup,
+.bootstrap-isolated main,
+.bootstrap-isolated menu,
+.bootstrap-isolated nav,
+.bootstrap-isolated section,
+.bootstrap-isolated summary {
+  display: block;
+}
+.bootstrap-isolated audio,
+.bootstrap-isolated canvas,
+.bootstrap-isolated progress,
+.bootstrap-isolated video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.bootstrap-isolated audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+.bootstrap-isolated [hidden],
+.bootstrap-isolated template {
+  display: none;
+}
+.bootstrap-isolated a {
+  background-color: transparent;
+}
+.bootstrap-isolated a:active,
+.bootstrap-isolated a:hover {
+  outline: 0;
+}
+.bootstrap-isolated abbr[title] {
+  border-bottom: 1px dotted;
+}
+.bootstrap-isolated b,
+.bootstrap-isolated strong {
+  font-weight: bold;
+}
+.bootstrap-isolated dfn {
+  font-style: italic;
+}
+.bootstrap-isolated h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.bootstrap-isolated mark {
+  background: #ff0;
+  color: #000;
+}
+.bootstrap-isolated small {
+  font-size: 80%;
+}
+.bootstrap-isolated sub,
+.bootstrap-isolated sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.bootstrap-isolated sup {
+  top: -0.5em;
+}
+.bootstrap-isolated sub {
+  bottom: -0.25em;
+}
+.bootstrap-isolated img {
+  border: 0;
+}
+.bootstrap-isolated svg:not(:root) {
+  overflow: hidden;
+}
+.bootstrap-isolated figure {
+  margin: 1em 40px;
+}
+.bootstrap-isolated hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+.bootstrap-isolated pre {
+  overflow: auto;
+}
+.bootstrap-isolated code,
+.bootstrap-isolated kbd,
+.bootstrap-isolated pre,
+.bootstrap-isolated samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.bootstrap-isolated button,
+.bootstrap-isolated input,
+.bootstrap-isolated optgroup,
+.bootstrap-isolated select,
+.bootstrap-isolated textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.bootstrap-isolated button {
+  overflow: visible;
+}
+.bootstrap-isolated button,
+.bootstrap-isolated select {
+  text-transform: none;
+}
+.bootstrap-isolated button,
+.bootstrap-isolated html input[type="button"],
+.bootstrap-isolated input[type="reset"],
+.bootstrap-isolated input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.bootstrap-isolated button[disabled],
+.bootstrap-isolated html input[disabled] {
+  cursor: default;
+}
+.bootstrap-isolated button::-moz-focus-inner,
+.bootstrap-isolated input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.bootstrap-isolated input {
+  line-height: normal;
+}
+.bootstrap-isolated input[type="checkbox"],
+.bootstrap-isolated input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+.bootstrap-isolated input[type="number"]::-webkit-inner-spin-button,
+.bootstrap-isolated input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+.bootstrap-isolated input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.bootstrap-isolated input[type="search"]::-webkit-search-cancel-button,
+.bootstrap-isolated input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.bootstrap-isolated fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.bootstrap-isolated legend {
+  border: 0;
+  padding: 0;
+}
+.bootstrap-isolated textarea {
+  overflow: auto;
+}
+.bootstrap-isolated optgroup {
+  font-weight: bold;
+}
+.bootstrap-isolated table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.bootstrap-isolated td,
+.bootstrap-isolated th {
+  padding: 0;
+}
+.bootstrap-isolated * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bootstrap-isolated *:before,
+.bootstrap-isolated *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.bootstrap-isolated html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.bootstrap-isolated body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+.bootstrap-isolated input,
+.bootstrap-isolated button,
+.bootstrap-isolated select,
+.bootstrap-isolated textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.bootstrap-isolated a {
+  color: #337ab7;
+  text-decoration: none;
+}
+.bootstrap-isolated a:hover,
+.bootstrap-isolated a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+.bootstrap-isolated a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.bootstrap-isolated figure {
+  margin: 0;
+}
+.bootstrap-isolated img {
+  vertical-align: middle;
+}
+.bootstrap-isolated .img-responsive,
+.bootstrap-isolated .carousel-inner > .item > img,
+.bootstrap-isolated .carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.bootstrap-isolated .img-rounded {
+  border-radius: 6px;
+}
+.bootstrap-isolated .img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.bootstrap-isolated .img-circle {
+  border-radius: 50%;
+}
+.bootstrap-isolated hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.bootstrap-isolated .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.bootstrap-isolated .sr-only-focusable:active,
+.bootstrap-isolated .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.bootstrap-isolated [role="button"] {
+  cursor: pointer;
+}
+.bootstrap-isolated .carousel {
+  position: relative;
+}
+.bootstrap-isolated .carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.bootstrap-isolated .carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.bootstrap-isolated .carousel-inner > .item > img,
+.bootstrap-isolated .carousel-inner > .item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .bootstrap-isolated .carousel-inner > .item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+  .bootstrap-isolated .carousel-inner > .item.next,
+  .bootstrap-isolated .carousel-inner > .item.active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .bootstrap-isolated .carousel-inner > .item.prev,
+  .bootstrap-isolated .carousel-inner > .item.active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .bootstrap-isolated .carousel-inner > .item.next.left,
+  .bootstrap-isolated .carousel-inner > .item.prev.right,
+  .bootstrap-isolated .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.bootstrap-isolated .carousel-inner > .active,
+.bootstrap-isolated .carousel-inner > .next,
+.bootstrap-isolated .carousel-inner > .prev {
+  display: block;
+}
+.bootstrap-isolated .carousel-inner > .active {
+  left: 0;
+}
+.bootstrap-isolated .carousel-inner > .next,
+.bootstrap-isolated .carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bootstrap-isolated .carousel-inner > .next {
+  left: 100%;
+}
+.bootstrap-isolated .carousel-inner > .prev {
+  left: -100%;
+}
+.bootstrap-isolated .carousel-inner > .next.left,
+.bootstrap-isolated .carousel-inner > .prev.right {
+  left: 0;
+}
+.bootstrap-isolated .carousel-inner > .active.left {
+  left: -100%;
+}
+.bootstrap-isolated .carousel-inner > .active.right {
+  left: 100%;
+}
+.bootstrap-isolated .carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+}
+.bootstrap-isolated .carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.bootstrap-isolated .carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.bootstrap-isolated .carousel-control:hover,
+.bootstrap-isolated .carousel-control:focus {
+  outline: 0;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.bootstrap-isolated .carousel-control .icon-prev,
+.bootstrap-isolated .carousel-control .icon-next,
+.bootstrap-isolated .carousel-control .glyphicon-chevron-left,
+.bootstrap-isolated .carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+.bootstrap-isolated .carousel-control .icon-prev,
+.bootstrap-isolated .carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.bootstrap-isolated .carousel-control .icon-next,
+.bootstrap-isolated .carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.bootstrap-isolated .carousel-control .icon-prev,
+.bootstrap-isolated .carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+.bootstrap-isolated .carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.bootstrap-isolated .carousel-control .icon-next:before {
+  content: '\203a';
+}
+.bootstrap-isolated .carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.bootstrap-isolated .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.bootstrap-isolated .carousel-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
+.bootstrap-isolated .carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.bootstrap-isolated .carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .bootstrap-isolated .carousel-control .glyphicon-chevron-left,
+  .bootstrap-isolated .carousel-control .glyphicon-chevron-right,
+  .bootstrap-isolated .carousel-control .icon-prev,
+  .bootstrap-isolated .carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .bootstrap-isolated .carousel-control .glyphicon-chevron-left,
+  .bootstrap-isolated .carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .bootstrap-isolated .carousel-control .glyphicon-chevron-right,
+  .bootstrap-isolated .carousel-control .icon-next {
+    margin-right: -10px;
+  }
+  .bootstrap-isolated .carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .bootstrap-isolated .carousel-indicators {
+    bottom: 20px;
+  }
+}
+.bootstrap-isolated .clearfix:before,
+.bootstrap-isolated .clearfix:after {
+  content: " ";
+  display: table;
+}
+.bootstrap-isolated .clearfix:after {
+  clear: both;
+}
+.bootstrap-isolated .center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bootstrap-isolated .pull-right {
+  float: right !important;
+}
+.bootstrap-isolated .pull-left {
+  float: left !important;
+}
+.bootstrap-isolated .hide {
+  display: none !important;
+}
+.bootstrap-isolated .show {
+  display: block !important;
+}
+.bootstrap-isolated .invisible {
+  visibility: hidden;
+}
+.bootstrap-isolated .text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.bootstrap-isolated .hidden {
+  display: none !important;
+}
+.bootstrap-isolated .affix {
+  position: fixed;
+}

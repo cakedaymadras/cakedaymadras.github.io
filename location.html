@@ -1,0 +1,28 @@
+---
+layout: page
+title: Contact Us
+---
+			<section>
+				<h3>Mobile</h3>
+				<p><a href="tel:9884000306" class="button">9884000306</a></p>
+				<h3>Address</h3>
+				<p>No 170, II Avenue, Anna Nagar West, Chennai - 40</p>
+				<h3>Landmarks</h3>
+				<p>Opposite to Adyar Ananda Bhavan. Near KFC. Next to Brunchies All Day.</p>
+				<p><a href="https://www.google.co.in/maps/dir//13.0853851554,80.2042776177" class="button special fit">Find Us on Google Maps</a></p>
+				<h3>Map</h3>
+				<div id="map" style="height: 400px; width: 100%;"></div>
+
+  			<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+        <script>
+            map = new L.Map('map');
+            var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib='&#169; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+            var osm = new L.TileLayer(osmUrl, {minZoom: 10, maxZoom: 20, attribution: osmAttrib});		
+            map.setView(new L.LatLng(13.08537, 80.20431), 16);
+            map.addLayer(osm);
+						map.scrollWheelZoom.disable();
+            //map.once('focus', function() { map.scrollWheelZoom.enable(); });
+						L.marker([13.08537, 80.20431]).addTo(map);
+				</script>			
+			</section>

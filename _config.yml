@@ -1,0 +1,57 @@
+# Welcome to Jekyll!
+#
+
+# Site settings
+title: Cake Day
+description: |
+  BAKED FRESH. EVERYDAY.
+owner: Twenty One Foods # or company name
+first_published: 2017 # if migrating another site, the year of your first publish
+email: brunchiesallday@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://cakedaychennai.in" # the base hostname & protocol for your site
+social:
+  twitter: https://twitter.com/CakeDayChennai
+  facebook-official: https://www.facebook.com/CakeDayAnnanagar/
+  #github: https://github.com/<username>
+  #linkedin-square: https://linkedin.com/in/<username>
+  #google-plus-square: https://plus.google.com/u/0/+<username>
+  #email: /contact/
+  #flickr:
+  #instagram:
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
+
+# Build settings
+markdown: kramdown
+#sass:
+#  style: compressed
